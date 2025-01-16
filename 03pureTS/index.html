@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Usuários</title>
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .input-div {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            margin: 20px;
+            width: 200px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .user-info {
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .user-info p {
+            padding: 5px 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Inputs para Nome e Email -->
+        <div class="input-div">
+            <input id="name" type="text" placeholder="Your name" required>
+            <input id="email" type="email" placeholder="Your email" required>
+        </div>
+
+        <!-- Botão para salvar o usuário -->
+        <button id="save-btn">Save</button>
+
+        <!-- Div para exibir informações do usuário -->
+        <div class="user-info">
+            <p>Name: </p>
+            <p>Email: </p>
+        </div>
+    </main>
+
+    <!-- Inclusão do arquivo JavaScript -->
+    <script src="dist/index.js"></script>
+</body>
+
+</html>
